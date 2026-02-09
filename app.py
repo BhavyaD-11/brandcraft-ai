@@ -2,8 +2,6 @@ from flask import Flask, render_template, request
 from openai import OpenAI
 
 app = Flask(__name__)
-
-# put your NEW API key here (the one you regenerated)
 client = OpenAI(
     api_key=""
 )
@@ -41,3 +39,4 @@ Generate:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
