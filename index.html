@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BrandCraft AI</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.85;
+        }
+
+        .card {
+            background: #ffffff;
+            color: #000000;
+            border-radius: 12px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .input-section h2,
+        .output-section h2 {
+            margin-bottom: 20px;
+            color: #203a43;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #203a43;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0f2027;
+        }
+
+        .output-box {
+            background: #f4f6f8;
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 220px;
+        }
+
+        .output-box h3 {
+            margin-top: 0;
+            color: #2c5364;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>BrandCraft AI</h1>
+        <p>Generative AI–Powered Branding Automation System</p>
+    </div>
+
+    <div class="card">
+
+        <!-- INPUT SECTION -->
+        <div class="input-section">
+            <h2>Brand Inputs</h2>
+
+            <label>Industry</label>
+            <input type="text" placeholder="e.g. Coffee, Fashion, Tech">
+
+            <label>Brand Tone</label>
+            <select>
+                <option>Premium</option>
+                <option>Modern</option>
+                <option>Playful</option>
+                <option>Minimal</option>
+            </select>
+
+            <label>Target Audience</label>
+            <input type="text" placeholder="e.g. Young professionals">
+
+            <button>Generate Branding</button>
+        </div>
+
+        <!-- OUTPUT SECTION -->
+        <div class="output-section">
+            <h2>Generated Brand Kit</h2>
+
+            <div class="output-box">
+                <h3>Brand Name</h3>
+                <p>Brewora</p>
+
+                <h3>Tagline</h3>
+                <p>Where Every Sip Matters</p>
+
+                <h3>Description</h3>
+                <p>
+                    Brewora is a premium coffee brand crafted for modern
+                    coffee lovers who value quality, warmth, and experience.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Built for Hackathon Demo • BrandCraft AI
+    </div>
+
+</div>
+
+</body>
+</html>
